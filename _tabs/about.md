@@ -24,7 +24,7 @@ nemztran@hust:~$ cat ./research_focus.txt
 nemztran@hust:~$ cat ./contact_info.txt
 ```
 
-* **GitHub:** [github.com/Nemztran](https://github.com/Nemztran)
-* **LinkedIn:** [linkedin.com/in/nam-trần](https://www.linkedin.com/in/nam-tr%E1%BA%A7n-73a13b338/)
-* **Facebook:** [facebook.com/namtrann1305](https://www.facebook.com/namtrann1305)
-* **Email:** [dinhnam13052006@gmail.com](mailto:dinhnam13052006@gmail.com)
+- <i class="fab fa-github fa-fw"></i> **GitHub** · [Nemztran](https://github.com/Nemztran)
+- <i class="fab fa-linkedin fa-fw"></i> **LinkedIn** · [Tran Dinh Nam](https://www.linkedin.com/in/nam-tr%E1%BA%A7n-73a13b338/)
+- <i class="fab fa-facebook fa-fw"></i> **Facebook** · [namtrann1305](https://www.facebook.com/namtrann1305)
+- <i class="fas fa-envelope fa-fw"></i> **Email** · [dinhnam13052006@gmail.com](mailto:dinhnam13052006@gmail.com)
