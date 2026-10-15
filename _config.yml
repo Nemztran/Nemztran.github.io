@@ -49,11 +49,11 @@ toc: true
 actions:
   edit_post:
     enabled: false
-    url: ""
+    url: 
     static_url: false
 
 comments:
-  provider: ""
+  provider: 
   giscus:
     repo: Nemztran/nemztran.github.io
     repo_id: ""
