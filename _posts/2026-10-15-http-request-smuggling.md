@@ -1,6 +1,6 @@
 ---
-title: "HTTP Request Smuggling: Lý thuyết và Thực hành PortSwigger Labs"
-description: "Tìm hiểu bản chất lỗ hổng HTTP Request Smuggling (CL.TE, TE.CL, TE.TE) và hướng dẫn giải chi tiết các bài lab trên PortSwigger."
+title: "Tản mạn về HTTP Request Smuggling"
+description: "Tìm hiểu bản chất lỗ hổng HTTP Request Smuggling (CL.TE, TE.CL, TE.TE) và ứng dụng trong các bài lab trên PortSwigger."
 date: 2026-10-15 14:00:00 +0700
 categories: [Web Security, PortSwigger Labs]
 tags: [http-request-smuggling, web-exploitation, portswigger, writeup]
