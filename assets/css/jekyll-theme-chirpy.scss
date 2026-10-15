@@ -1,0 +1,45 @@
+---
+---
+
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* Nạp font Inter (Hỗ trợ full Tiếng Việt) và JetBrains Mono (Cho khung Code) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* Đồng bộ font chữ cho toàn bộ tiêu đề và nội dung */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+#sidebar .site-title,
+.card-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+/* Đồng bộ font cho phần mô tả bài viết (Subtitle / Description) */
+.post-desc,
+.card-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Làm đẹp font cho các khối Code, Terminal và HTTP Request */
+code,
+pre,
+.highlight,
+figure.highlight pre {
+  font-family: 'JetBrains Mono', Consolas, Monaco, monospace !important;
+  font-feature-settings: "liga" 0;
+}
