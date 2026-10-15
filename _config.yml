@@ -49,7 +49,7 @@ toc: true
 actions:
   edit_post:
     enabled: false
-    url: ""
+    url: 
     static_url: false
 
 comments:
