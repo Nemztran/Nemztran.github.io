@@ -5,7 +5,7 @@ date: 2026-10-15 14:00:00 +0700
 categories: [Web Security, PortSwigger Labs]
 tags: [http-request-smuggling, web-exploitation, portswigger, writeup]
 toc: true
-image_path: /assets/img/posts/2026-10-15-http-request-smuggling
+media_subpath: /assets/img/posts/2026-10-15-http-request-smuggling
 math: true
 pin: true
 ---
