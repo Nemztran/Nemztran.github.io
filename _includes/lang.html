@@ -1,0 +1,8 @@
+{% comment %}Map the public language codes to Chirpy's locale filenames.{% endcomment %}
+{% assign lang = site.active_lang | default: page.lang | default: site.lang %}
+{% if lang == 'vi' %}
+  {% assign lang = 'vi-VN' %}
+{% endif %}
+{% unless site.data.locales[lang] %}
+  {% assign lang = 'en' %}
+{% endunless %}

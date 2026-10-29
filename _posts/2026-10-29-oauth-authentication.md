@@ -2,6 +2,7 @@
 title: "Các lỗ hổng OAuth 2.0 Authentication"
 description: "Phân tích luồng OAuth, OpenID Connect và 5 lab PortSwigger: authentication bypass, forced linking, rò rỉ code/token, open redirect và SSRF. Mở rộng với PKCE, ID token và account linking."
 date: 2026-10-29 11:00:00 +0700
+lang: vi
 categories: [Web Security, PortSwigger Labs]
 tags: [oauth, openid-connect, authentication, account-takeover, portswigger, writeup]
 toc: true

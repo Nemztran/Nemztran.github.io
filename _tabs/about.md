@@ -2,6 +2,8 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+lang: vi
+permalink: /about/
 ---
 
 ```console
@@ -9,16 +11,16 @@ nemztran@hust:~$ whoami
 ```
 
 **Tran Dinh Nam** (**Nemztran**)
-* **Education:** B.S. in Computer Science @ **Hanoi University of Science and Technology (HUST)**
-Security researcher specializing in vulnerability research, application security, and offensive security engineering. This technical repository archives my security advisories, CVE root-cause analyses, and CTF research.
+* **Học vấn:** Cử nhân Khoa học Máy tính @ **Đại học Bách khoa Hà Nội (HUST)**
+Mình nghiên cứu bảo mật, tập trung vào nghiên cứu lỗ hổng, bảo mật ứng dụng và kỹ thuật tấn công. Blog này lưu trữ các thông báo bảo mật, phân tích nguyên nhân gốc rễ của CVE và nghiên cứu CTF của mình.
 
 ```console
 nemztran@hust:~$ cat ./research_focus.txt
 ```
-* **Vulnerability Research & N-day Analysis:**  
-  Conducting in-depth source code audits, patch diffing, and root-cause analysis of complex logic flaws to identify security vulnerabilities, with a focus on reliable Proof-of-Concept (PoC) development and exploit validation.
-* **Advanced Web & API Security:**  
-  Investigating complex web application attack surfaces, analyzing application logic, authentication and authorization mechanisms, and security control weaknesses to identify exploitable vulnerabilities.
+* **Nghiên cứu lỗ hổng & Phân tích N-day:**
+  Kiểm tra mã nguồn, so sánh bản vá và phân tích nguyên nhân gốc rễ của các lỗi logic phức tạp để tìm lỗ hổng bảo mật; tập trung xây dựng PoC đáng tin cậy và xác minh khả năng khai thác.
+* **Bảo mật Web & API nâng cao:**
+  Khảo sát bề mặt tấn công của ứng dụng web, phân tích logic ứng dụng, cơ chế xác thực và phân quyền, cùng các điểm yếu trong biện pháp bảo vệ để xác định lỗ hổng có thể khai thác.
 
 ```console
 nemztran@hust:~$ cat ./contact_info.txt

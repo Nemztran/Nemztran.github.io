@@ -1,0 +1,19 @@
+---
+layout: compress
+swcache: true
+---
+
+[
+  {% for post in site.posts %}
+  {
+    "title": {{ post.title | jsonify }},
+    {% capture post_url %}{% if site.active_lang != site.default_lang %}/{{ site.active_lang }}{% endif %}{{ post.url }}{% endcapture %}
+    "url": {{ post_url | relative_url | jsonify }},
+    "categories": {{ post.categories | join: ', ' | jsonify }},
+    "tags": {{ post.tags | join: ', ' | jsonify }},
+    "date": {{ post.date | jsonify }},
+    {% capture content -%}{% include post-summary.html full_text=true %}{%- endcapture -%}
+    "content": {{ content | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

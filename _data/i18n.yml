@@ -1,0 +1,10 @@
+vi:
+  tagline: Nghiên cứu lỗ hổng & Writeup
+  description: >-
+    Blog cá nhân của Namchan chia sẻ các bài nghiên cứu lỗ hổng bảo mật,
+    phân tích CVE, Web Exploitation và CTF Writeups.
+en:
+  tagline: Vulnerability Research & Writeups
+  description: >-
+    Namchan's personal blog on vulnerability research, CVE analysis,
+    web exploitation, and CTF writeups.

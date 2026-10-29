@@ -47,3 +47,33 @@ figure.highlight pre {
   color: inherit !important;
   background-color: transparent !important;
 }
+
+.language-switch {
+  display: inline-flex;
+  gap: 0.25rem;
+  margin-top: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--btn-border-color);
+  border-radius: 0.75rem;
+
+  a {
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    color: var(--sidebar-muted-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+
+    &:hover,
+    &[aria-current='true'] {
+      color: var(--sidebar-active-color);
+      background: var(--sidebar-hover-bg);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--link-color);
+      outline-offset: 2px;
+    }
+  }
+}

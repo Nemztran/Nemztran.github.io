@@ -2,6 +2,7 @@
 title: "Tấn công Prototype Pollution"
 description: "Từ Object, Prototype và prototype chain đến DOM XSS, leo quyền và RCE qua các bài lab Prototype Pollution trên PortSwigger."
 date: 2026-10-29 10:00:00 +0700
+lang: vi
 categories: [Web Security, PortSwigger Labs]
 tags: [prototype-pollution, javascript, web-exploitation, portswigger, writeup]
 toc: true
