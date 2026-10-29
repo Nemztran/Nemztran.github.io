@@ -40,6 +40,20 @@ trang ở ngôn ngữ còn lại và ghi nhớ lựa chọn trên trình duyệt
 Chạy `bundle install`, sau đó `bundle exec jekyll serve` để xem thử.
 Build production bằng `JEKYLL_ENV=production bundle exec jekyll build`.
 
+### CI và deploy
+
+Mỗi lần push thay đổi code lên một nhánh hoặc mở pull request vào `main`/`master`,
+GitHub Actions sẽ build production, chạy kiểm thử chuyển ngôn ngữ, kiểm tra các
+trang song ngữ và chạy HTMLProofer. Bản build thành công được lưu trong artifact
+`github-pages` của workflow để tải về xem thử. Các thay đổi chỉ ở README hoặc
+LICENSE không kích hoạt workflow.
+
+Chỉ `main` và `master` được deploy lên website GitHub Pages sau khi các kiểm tra
+đạt. Push nhánh tính năng tạo bản build kiểm thử; merge vào nhánh chính sẽ deploy.
+
+Chạy riêng kiểm thử bằng `node --test tools/language.test.cjs` và, sau khi build,
+`python tools/verify-site.py`.
+
 Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
 
 ## Contributing
