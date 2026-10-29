@@ -1,0 +1,11 @@
+<nav class="language-switch" aria-label="{% if site.active_lang == 'en' %}Language{% else %}Ngôn ngữ{% endif %}">
+  {% for language in site.languages %}
+    {% capture language_url %}{{ site.baseurl }}{% if language != site.default_lang %}/{{ language }}{% endif %}{{ page.url }}{% endcapture %}
+    <a {% static_href %}href="{{ language_url }}"{% endstatic_href %}
+      lang="{{ language }}" hreflang="{{ language }}" data-language="{{ language }}"
+      {% if language == site.active_lang %}aria-current="true"{% endif %}
+      aria-label="{% if language == 'en' %}English{% else %}Tiếng Việt{% endif %}">
+      {{- language | upcase -}}
+    </a>
+  {% endfor %}
+</nav>

@@ -5,6 +5,18 @@ theme: jekyll-theme-chirpy
 
 # The language of the webpage
 lang: vi
+languages: [vi, en]
+default_lang: vi
+lang_vars: [lang]
+parallel_localization: false
+exclude_from_localization:
+  - assets/css
+  - assets/img
+  - assets/lib
+  - assets/js/dist
+  - assets/js/language.js
+  - sw.js
+  - app.js
 
 # Change to your timezone
 timezone: Asia/Bangkok
@@ -122,6 +134,7 @@ defaults:
 
 sass:
   style: compressed
+  sourcemap: never
 
 compress_html:
   clippings: all
@@ -133,6 +146,7 @@ compress_html:
     envs: [development]
 
 exclude:
+  - vendor
   - "*.gem"
   - "*.gemspec"
   - docs

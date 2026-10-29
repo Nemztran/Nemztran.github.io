@@ -2,6 +2,7 @@
 title: "Tản mạn về HTTP Request Smuggling"
 description: "Tìm hiểu bản chất lỗ hổng HTTP Request Smuggling (CL.TE, TE.CL, TE.TE) và ứng dụng trong các bài lab trên PortSwigger."
 date: 2026-10-15 14:00:00 +0700
+lang: vi
 categories: [Web Security, PortSwigger Labs]
 tags: [http-request-smuggling, web-exploitation, portswigger, writeup]
 toc: true

@@ -1,0 +1,7 @@
+{% for language in site.languages %}
+  {% capture language_url %}{{ site.baseurl }}{% if language != site.default_lang %}/{{ language }}{% endif %}{{ page.url }}{% endcapture %}
+  <link rel="alternate" hreflang="{{ language }}" {% static_href %}href="{{ site.url }}{{ language_url }}"{% endstatic_href %}>
+{% endfor %}
+<script src="{{ '/assets/js/language.js' | relative_url }}" defer
+  data-baseurl="{{ site.baseurl }}" data-default-language="{{ site.default_lang }}"
+  data-language="{{ site.active_lang }}"></script>
