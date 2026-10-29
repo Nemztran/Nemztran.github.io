@@ -1,6 +1,6 @@
 ---
-title: "Tản mạn về Prototype Pollution"
-description: "Từ Object, Prototype và prototype chain đến DOM XSS, leo quyền và RCE qua 9 bài lab Prototype Pollution trên PortSwigger."
+title: "Tấn công Prototype Pollution"
+description: "Từ Object, Prototype và prototype chain đến DOM XSS, leo quyền và RCE qua các bài lab Prototype Pollution trên PortSwigger."
 date: 2026-10-29 10:00:00 +0700
 categories: [Web Security, PortSwigger Labs]
 tags: [prototype-pollution, javascript, web-exploitation, portswigger, writeup]
@@ -17,7 +17,7 @@ Giả sử ứng dụng kiểm tra quyền bằng `user.isAdmin`. Mình không s
 
 Đó chính là vấn đề của **Prototype Pollution**: dữ liệu do người dùng kiểm soát đi qua một đoạn code xử lý object không an toàn, khiến attacker thêm hoặc sửa thuộc tính trên prototype. Những đoạn code khác vô tình đọc giá trị này và có thể dẫn đến DOM XSS, vượt quyền hoặc thậm chí RCE.
 
-Trong bài này mình đi từ các ghi chú về Object và Prototype, sau đó phân tích lần lượt 9 bài lab trên PortSwigger: 5 bài client-side và 4 bài server-side. Các payload khai thác bên dưới được đặt trong ngữ cảnh những bài lab này.
+Trong bài này mình đi từ các ghi chú về Object và Prototype, sau đó phân tích lần lượt các bài lab trên PortSwigger: 5 bài client-side và 4 bài server-side. Các payload khai thác bên dưới được đặt trong ngữ cảnh những bài lab này.
 
 ---
 
