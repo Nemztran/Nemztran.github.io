@@ -1,0 +1,39 @@
+---
+layout: page
+---
+
+{% include lang.html %}
+{% assign years = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% if lang == 'vi-VN' %}
+  {% assign post_label = 'bài viết' %}
+{% else %}
+  {% assign post_label = 'posts' %}
+{% endif %}
+
+<div class="archive-index">
+  {% for year in years %}
+    <section class="archive-group" aria-labelledby="archive-year-{{ year.name }}">
+      <header class="archive-year">
+        <h2 id="archive-year-{{ year.name }}">{{ year.name }}</h2>
+        <span>{{ year.items | size }} {{ post_label }}</span>
+      </header>
+      <ul class="archive-list">
+        {% for post in year.items %}
+          <li>
+            <a class="archive-entry" href="{{ post.url | relative_url }}">
+              <time datetime="{{ post.date | date_to_xmlschema }}" aria-label="{{ post.date | date: '%Y-%m-%d' }}">
+                {{ post.date | date: '%d/%m' }}
+              </time>
+              <span class="archive-entry-content">
+                <span class="archive-entry-title">{{ post.title | escape }}</span>
+                {% if post.categories.size > 0 %}
+                  <span class="archive-entry-category">{{ post.categories | join: ' / ' | escape }}</span>
+                {% endif %}
+              </span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>
