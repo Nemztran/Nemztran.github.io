@@ -8,7 +8,7 @@ tags: [http-request-smuggling, web-exploitation, portswigger, writeup]
 toc: true
 media_subpath: /assets/img/posts/2026-10-15-http-request-smuggling
 math: true
-pin: true
+pin: false
 ---
 
 ## I. What is HTTP Request Smuggling?
